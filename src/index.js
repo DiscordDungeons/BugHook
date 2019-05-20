@@ -160,7 +160,7 @@ const main = async () => {
 	})
 
 	if (!isDev) {
-		require('http').createServer(webhooks.middleware).listen(3000)
+		require('http').createServer(webhooks.middleware).listen(process.env.SERVER_PORT || 3000 )
 	} else {
 		const source = new EventSource(process.env.WEBHOOK_PROXY_URL)
 
