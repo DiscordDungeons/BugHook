@@ -1,0 +1,24 @@
+{
+  "name": "BugHook",
+  "version": "1.0.0",
+  "description": "A github webhook listener for connecting a public issue-only repository to a private project board",
+  "main": "index.js",
+  "repository": "git@github.com:DiscordDungeons/BugHook.git",
+  "author": "Mackan <mackan@discorddungeons.me>",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@octokit/webhooks": "^6.2.1",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eventsource": "^1.0.7"
+  }
+}
