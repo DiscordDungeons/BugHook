@@ -1,4 +1,7 @@
 {
+	"extends": [
+        "eslint:recommended"
+    ],
 	"parserOptions": {
 		"ecmaVersion": 2017,
 		"sourceType": "script",
@@ -41,7 +44,8 @@
 		"no-const-assign": 2,
 		"no-this-before-super": 2,
 		"no-var": 2,
-		"prefer-spread": 2
+		"prefer-spread": 2,
+        "no-console": "off"
 	},
 	"overrides": [
 		{
